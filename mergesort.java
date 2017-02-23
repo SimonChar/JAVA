@@ -60,30 +60,21 @@ public class Main
 		{
 		
 		if(first[iFirst] < second[iSecond])
-				{
-					result[iMerged] = first[iFirst];
-					iFirst++;
-				}
-				
-		else
-		
-				{
-					
-					result[iMerged] = second[iSecond];
-					iSecond++;
-				}
+			{
+				result[iMerged] = first[iFirst];
+				iFirst++;
+			}				
+		else		
+			{	
+				result[iMerged] = second[iSecond];
+				iSecond++;
+			}
 		iMerged++;
 		
-		
 		}
-		
-		
 		//copy remaining elements from both halves - each half will havealready sorted elements
-		
 		System.arraycopy(first, iFirst, result, iMerged, first.length - iFirst);
-		
 		System.arraycopy(second, iSecond, result, iMerged, second.length - iSecond);
-		
 		
 	}
 	public static void printList(int[] list)
@@ -91,14 +82,7 @@ public class Main
 		for(int i =0; i < list.length; i++)
 		{
 			System.out.print(list[i] + ", ");
-			}
-			
+		}		
 	}
-	
-	
-	
-	
-	
-	
 	
 }

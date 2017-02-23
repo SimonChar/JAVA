@@ -24,17 +24,10 @@ public class Main
 				{
 					list[piv+1] = list[piv];
 					piv-=1;
-					count+=1;
-					
+					count+=1;				
 				}
-				
 				list[piv+1]=key;
-				
-			
 		}
-		
-		
-		
 		
 		for(int i =0; i < len;i++)
 		{
@@ -42,8 +35,5 @@ public class Main
 		}
 		
 		System.out.println("count: "+ count);
-		
-		
-		
 	}
 }

@@ -1,0 +1,14 @@
+import java.util.*;
+
+class Main {
+  public static void main(String[] args) {
+    int x = fibb(7);  
+    System.out.print("Answer: " + x);
+  }
+  
+  public static int fibb(int n){
+    if (n <= 2){return 1;}
+    return fibb(n-1)+fibb(n-2);
+  
+  }
+}

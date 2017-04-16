@@ -1,0 +1,27 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner in = new Scanner(System.in);
+        String S = in.next();
+        int size = in.nextInt();
+        String Max = S.substring(0,size);
+        String Min = S.substring(0,size); 
+        
+        for (int i = 0; i <= S.length()- size; i++){
+ 
+            if(S.substring(i,i+size).compareTo(Max) > 0){
+                Max = S.substring(i,i+size);
+            }
+            if(S.substring(i,i+size).compareTo(Min) < 0){
+                Min = S.substring(i,i+size);
+            }
+        }
+   
+        System.out.println(Min);
+        System.out.println(Max);
+    }
+}
